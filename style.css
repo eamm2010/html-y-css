@@ -4,8 +4,22 @@ body {
     background-color: #ffffff; /* El color del fondo de la página web */
     color: #000000; /* El color del texto*/ 
 }
+
+@keyframes color-change {
+    0% {
+    color: blue;
+    font-size: 13px;
+    }
+    50% {
+    color: red;
+    font-size: 23px;
+    }
+    100% {
+    color: blue;
+    font-size: 13px;
+    }
+}
+
 h1 {
-    color: #0027a8; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color-change 3s infinite;
 }
